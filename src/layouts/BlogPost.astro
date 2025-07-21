@@ -8,7 +8,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage, canonical } = Astro.props;
-console.log("canonical prop in BlogPost.astro:", canonical);
+
 ---
 
 <html lang="en">
@@ -16,10 +16,6 @@ console.log("canonical prop in BlogPost.astro:", canonical);
 		<!-- LAYOUT_DEBUG: This is BlogPost.astro -->
 		<BaseHead title={title} description={description} canonical={canonical} />
 
-<script type="module" is:inline>
-  console.log("debug_canonical from BlogPost.astro:", { canonical });
-
-</script>
 		<style>
 			main {
 				width: calc(100% - 2em);
@@ -60,6 +56,24 @@ console.log("canonical prop in BlogPost.astro:", canonical);
 			}
 		</style>
 	</head>
+
+<!-- Debug Box (green) -->
+<div style="
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 128, 0, 0.85);
+  color: white;
+  font-family: monospace;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  z-index: 9999;
+  max-width: 320px;
+  overflow-wrap: break-word;
+  ">
+  🧪 BaseHead Debug — canonical: {canonical ?? 'undefined'}
+</div>
 
 	<body>
 		<Header />
