@@ -16,7 +16,7 @@ const { title, description, pubDate, updatedDate, heroImage, canonical } = Astro
   <link rel="canonical" href={canonical} />
 )}
 
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} canonical={canonical} />
 		<style>
 			main {
 				width: calc(100% - 2em);
