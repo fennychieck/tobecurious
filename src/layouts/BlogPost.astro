@@ -8,6 +8,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage, canonical } = Astro.props;
+console.log("canonical prop in BlogPost.astro:", canonical);
 ---
 
 <html lang="en">
