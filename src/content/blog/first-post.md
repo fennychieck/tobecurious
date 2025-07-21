@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Page With Broken Canonical
-canonical: https://tobecurious.win/nonexistent-page-xyz
+title: First Post
+canonical: https://tobecurious.win/redirect-to-dead
+
 
 description: "fc2Lorem ipsum dolor sit amet"
 pubDate: "Jul 08 2022"
