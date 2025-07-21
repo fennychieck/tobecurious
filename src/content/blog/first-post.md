@@ -2,7 +2,7 @@
 
 title: First Post
 layout: default
-canonical: https://httpstat.us/302?redirect=https://httpstat.us/404
+canonical: https://httpbin.org/redirect-to?url=https://httpbin.org/status/404
 
 description: "fc2Lorem ipsum dolor sit amet"
 pubDate: "Jul 08 2022"
