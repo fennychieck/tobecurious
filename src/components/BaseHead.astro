@@ -15,8 +15,6 @@ const { title, description, image = '/blog-placeholder-1.jpg', canonical } = Ast
 // If canonical is provided, use it; otherwise build full URL from current path + site URL
 const canonicalURL = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
 
-const canonicalStr = JSON.stringify(canonical);
-const canonicalURLStr = JSON.stringify(canonicalURL);
 ---
 
 <!-- Global Metadata -->
@@ -31,10 +29,9 @@ const canonicalURLStr = JSON.stringify(canonicalURL);
 
 <!-- Debug: Log canonical and canonicalURL to browser console -->
 <script type="module" is:inline>
-  console.log("🧪 Debug — canonical prop:", {canonical: {canonical}});
-  console.log("🧪 Debug — canonicalURL computed:", {canonicalURL: {canonicalURL}});
+  console.log("🧪 Debug — canonical prop:", { canonical: "{canonical}" });
+  console.log("🧪 Debug — canonicalURL computed:", { canonicalURL: "{canonicalURL}" });
 </script>
-
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
