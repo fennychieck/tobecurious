@@ -1,7 +1,7 @@
 ---
 layout: default
 title: First Post
-canonical: https://tobecurious.win/redirect-to-dead
+canonical: https://tobecurious.win/blog/sixth-post/
 
 
 description: "fc2Lorem ipsum dolor sit amet"
