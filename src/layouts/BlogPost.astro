@@ -9,15 +9,14 @@ type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage, canonical } = Astro.props;
 console.log("canonical prop in BlogPost.astro:", canonical);
-const debugCanonical = canonical;
 ---
 
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} canonical={canonical} />
-  <!-- ✅ Debug log to browser console -->
+  <!-- ✅ Debug: log canonical to browser console -->
     <script type="module" is:inline>
-      console.log("debug_canonical from BlogPost.astro:", { canonical: {canonical} });
+      console.log("debug_canonical from BlogPost.astro:", { canonical: `${canonical}` });
     </script>
 		<style>
 			main {
