@@ -28,8 +28,8 @@ const canonicalURL = canonical ?? new URL(Astro.url.pathname, Astro.site).toStri
 
 <!-- Debug: Log canonical and canonicalURL to browser console -->
 <script type="module" is:inline>
-  console.log("BaseHead canonical prop:", ${JSON.stringify(canonical)});
-  console.log("BaseHead computed canonicalURL:", ${JSON.stringify(canonicalURL)});
+  {`console.log("BaseHead canonical prop:", ${JSON.stringify(canonical)});
+    console.log("BaseHead computed canonicalURL:", ${JSON.stringify(canonicalURL)});`}
 </script>
 
 <!-- Canonical URL -->
