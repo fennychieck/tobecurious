@@ -31,9 +31,12 @@ const canonicalURLStr = JSON.stringify(canonicalURL);
 
 <!-- Debug: Log canonical and canonicalURL to browser console -->
 <script type="module" is:inline>
-  console.log("BaseHead canonical prop:", JSON.parse(${canonicalStr}));
-  console.log("BaseHead computed canonicalURL:", JSON.parse(${canonicalURLStr}));
+  const canonical = JSON.parse(${canonicalStr});
+  const canonicalURL = JSON.parse(${canonicalURLStr});
+  console.log("🧪 Debug — canonical prop:", canonical);
+  console.log("🧪 Debug — canonicalURL computed:", canonicalURL);
 </script>
+
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
