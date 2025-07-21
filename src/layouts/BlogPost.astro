@@ -12,9 +12,6 @@ const { title, description, pubDate, updatedDate, heroImage, canonical } = Astro
 
 <html lang="en">
 	<head>
-{canonical && (
-  <link rel="canonical" href={canonical} />
-)}
 
 		<BaseHead title={title} description={description} canonical={canonical} />
 		<style>
