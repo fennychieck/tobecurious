@@ -1,7 +1,7 @@
 
 ---
 title: First Post
-layout: ../../layouts/blogpost.astro
+layout: ../../layouts/Blogpost.astro
 canonical: https://tobecurious.win/redirect-to-missing
 description: "fc2Lorem ipsum dolor sit amet"
 pubDate: "Jul 08 2022"
