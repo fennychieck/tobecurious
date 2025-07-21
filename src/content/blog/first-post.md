@@ -1,8 +1,8 @@
 ---
-layout: default
-title: First Post
-canonical: https://tobecurious.win/blog/sixth-post/
 
+title: First Post
+layout: default
+canonical: https://httpstat.us/302?redirect=https://httpstat.us/404
 
 description: "fc2Lorem ipsum dolor sit amet"
 pubDate: "Jul 08 2022"
