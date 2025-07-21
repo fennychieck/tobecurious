@@ -7,14 +7,14 @@ import FormattedDate from '../components/FormattedDate.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, canonical } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
-{% if page.canonical %}
-  <link rel="canonical" href="{{ page.canonical }}">
-{% endif %}
+{canonical && (
+  <link rel="canonical" href={canonical} />
+)}
 
 		<BaseHead title={title} description={description} />
 		<style>
