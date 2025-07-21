@@ -16,8 +16,10 @@ console.log("canonical prop in BlogPost.astro:", canonical);
 		<BaseHead title={title} description={description} canonical={canonical} />
   <!-- ✅ Debug: log canonical to browser console -->
     <script type="module" is:inline>
-      console.log("debug_canonical from BlogPost.astro:", { canonical: `${canonical}` });
-    </script>
+  console.log("debug_canonical from BlogPost.astro:", {
+    canonical: "{canonical}"
+  });
+</script>
 		<style>
 			main {
 				width: calc(100% - 2em);
