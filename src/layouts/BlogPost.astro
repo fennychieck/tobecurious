@@ -15,11 +15,11 @@ console.log("canonical prop in BlogPost.astro:", canonical);
 	<head>
 		<!-- LAYOUT_DEBUG: This is BlogPost.astro -->
 		<BaseHead title={title} description={description} canonical={canonical} />
-  <!-- ✅ Debug: log canonical to browser console -->
-    <script type="module" is:inline>
-  console.log("debug_canonical from BlogPost.astro:", {
-    canonical: "{canonical}"
-  });
+
+<script type="module" is:inline>
+  console.log("All Astro props:", Astro.props);
+  console.log("debug_canonical from BlogPost.astro:", { canonical });
+
 </script>
 		<style>
 			main {
