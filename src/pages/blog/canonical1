@@ -10,6 +10,6 @@ export const prerender = true;
   </head>
   <body>
     <h1>Canonical to Broken URL Test1</h1>
-    <p>1. This page’s canonical points to a 404 URL: <code>/non-existing-page1</code></p>
+    <p>This page’s canonical points to a 404 URL: <code>/non-existing-page1</code></p>
   </body>
 </html>
