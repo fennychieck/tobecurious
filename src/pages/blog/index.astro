@@ -90,6 +90,13 @@ const posts = (await getCollection('blog')).sort(
 		<main>
 			<section>
 				<ul>
+					<li>
+						<a href="/blog/canonical-to-broken/">
+							<img width="720" height="360" src="/blog-placeholder-3.jpg" alt="" />
+							<h4 class="title">Canonical to Broken URL Test</h4>
+							<p class="date">Test page (manual link)</p>
+						</a>
+					</li>
 					{
 						posts.map((post) => (
 							<li>
