@@ -105,6 +105,14 @@ const posts = (await getCollection('blog')).sort(
 							<p class="date">Test page1 (manual link)</p>
 						</a>
 					</li>
+
+					<li>
+  						<a href="/blog/no-canonical/">
+							<img width="720" height="360" src="/blog-placeholder-3.jpg" alt="" />
+   						 	<h4 class="title">No Canonical Test</h4>
+    							<p class="date">Test page with no canonical</p>
+  						</a>
+					</li>
 					{
 						posts.map((post) => (
 							<li>
