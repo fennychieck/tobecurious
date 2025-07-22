@@ -9,7 +9,7 @@ export const prerender = true;
     <link rel="canonical" href="https://tobecurious.win/non-existing-page1" />
   </head>
   <body>
-    <h1>Canonical to Broken URL Test</h1>
+    <h1>Canonical to Broken URL Test1</h1>
     <p>1. This page’s canonical points to a 404 URL: <code>/non-existing-page1</code></p>
   </body>
 </html>
