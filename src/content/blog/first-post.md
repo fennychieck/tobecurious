@@ -1,12 +1,15 @@
 
 ---
-title: First Post
+title: fccanonical Test Page
 layout: ../../layouts/BlogPost.astro
-canonical: https://tobecurious.win/redirect-to-missing
-description: "fc2Lorem ipsum dolor sit amet"
+canonical: https://tobecurious.win/non-existing-page
+description: fctesting canonical to broken URL
 pubDate: "Jul 08 2022"
 heroImage: "/blog-placeholder-3.jpg"
 ---
+
+This is a test page that has a canonical pointing to a URL that does not exist.
+It should trigger "canonical to 4xx" warnings in SEO tools like Ahrefs.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
 
