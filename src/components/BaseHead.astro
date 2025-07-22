@@ -12,6 +12,9 @@ interface Props {
 
 const { title, description, image = '/blog-placeholder-1.jpg', canonical } = Astro.props as Props;
 
+// ✅ Compute canonicalURL fallback
+const canonicalURL = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
+
 ---
 
 <!-- Global Metadata -->
