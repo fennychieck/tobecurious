@@ -121,6 +121,14 @@ const posts = (await getCollection('blog')).sort(
 							<p class="date">Test page2 (manual link)</p>
 						</a>
 					</li>
+
+					<li>
+						<a href="/blog/canonical3/">
+							<img width="720" height="360" src="/blog-placeholder-3.jpg" alt="" />
+							<h4 class="title">Canonical to Broken URL Test3</h4>
+							<p class="date">Test page3 (manual link)</p>
+						</a>
+					</li>
 					{
 						posts.map((post) => (
 							<li>
