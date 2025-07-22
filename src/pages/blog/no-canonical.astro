@@ -1,0 +1,16 @@
+---
+// src/pages/blog/no-canonical.astro
+export const prerender = true;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>No Canonical Test</title>
+    <!-- No <link rel="canonical"> on purpose -->
+  </head>
+  <body>
+    <h1>No Canonical Test</h1>
+    <p>This page has <strong>no canonical</strong>. Intended for SEO testing.</p>
+  </body>
+</html>
