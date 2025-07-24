@@ -1,0 +1,34 @@
+---
+// Astro frontmatter
+export const prerender = true;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Canonical Demo</title>
+
+    <!-- Initial canonical tag (seen by crawlers like Ahrefs) -->
+    <link rel="canonical" href="https://example.com/bad-url" />
+
+    <!-- Inline script to modify canonical tag in the browser -->
+    <script is:inline>
+      document.addEventListener("DOMContentLoaded", function () {
+        const oldCanonical = document.querySelector('link[rel="canonical"]');
+        if (oldCanonical) oldCanonical.remove();
+
+        const newCanonical = document.createElement('link');
+        newCanonical.setAttribute('rel', 'canonical');
+        newCanonical.setAttribute('href', 'https://example.com/good-url');
+        document.head.appendChild(newCanonical);
+
+        console.log("Canonical tag replaced.");
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>Canonical Tag Live Demo</h1>
+    <p>Open DevTools to view the DOM change.</p>
+  </body>
+</html>
