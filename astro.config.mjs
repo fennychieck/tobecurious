@@ -14,4 +14,10 @@ export default defineConfig({
       enabled: true,
     },
   }),
+redirects: {
+    "/blog/first-post/": {
+      status: 302,
+      destination: "/non-existing-page1",
+    },
+  },
 });
