@@ -1,7 +1,0 @@
-export const prerender = false;
-
-import { redirect } from 'astro:middleware';
-
-export async function GET() {
-  return redirect('/non-existing-page1', 302); // or use 301
-}
