@@ -1,12 +1,20 @@
 ---
 ---
-// No frontmatter needed
+// /src/pages/blog/first-hop.astro
+
 <html lang="en">
   <head>
-    <meta http-equiv="refresh" content="0; url=/blog/second-hop/" />
+    <meta charset="UTF-8" />
     <title>Redirecting...</title>
+
+    <!-- 🚨 3-second redirect -->
+    <meta http-equiv="refresh" content="3; url=/blog/second-hop/" />
   </head>
   <body>
-    <p>Redirecting to <a href="/blog/second-hop/">/blog/second-hop/</a></p>
+    <h1>Redirecting...</h1>
+    <p>You will be redirected to <a href="/blog/second-hop/">Second Hop</a> in 3 seconds.</p>
+
+    <!-- Optional: manual redirect button -->
+    <button onclick="window.location.href='/blog/second-hop/'">Click here if not redirected</button>
   </body>
 </html>
